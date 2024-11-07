@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.altair</groupId>
 	<artifactId>streamline</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>streamline</name>
 	<description>Kafka integration with SpringBoot</description>
 	<url/>
