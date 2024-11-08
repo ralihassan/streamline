@@ -22,6 +22,7 @@ public class KafkaConsumerConfig {
 
     @Bean
     public ConsumerFactory<String, OrderDAO> consumerFactory() {
+
         Map<String, Object> configProps = new HashMap<>();
         configProps.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "kafka:9092");
         configProps.put(ConsumerConfig.GROUP_ID_CONFIG, "order_group");

@@ -23,10 +23,10 @@ public class OrderService {
         kafkaTemplate.send(TOPIC, orderDAO);
     }
 
-    @KafkaListener(topics = TOPIC, groupId = "order_group")
-    public void listen(OrderDAO order) {
-        logger.info("Received order: {}", order);
-        // Process the order as needed
-    }
+    // @KafkaListener(topics = TOPIC, groupId = "order_group")
+    // public void listen(OrderDAO order) {
+    // logger.info("Received order: {}", order);
+    // // Process the order as needed
+    // }
 
 }
